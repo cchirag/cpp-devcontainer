@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  cpp_dev:
+    build: .
+    volumes:
+      - ./src:/app/src
+    container_name: cpp_dev
+    command: make watch
+    tty: true
